@@ -1,50 +1,45 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report:
+- Version change: N/A → 1.0.0
+- List of modified principles: Initial definition.
+- Added sections: Core Principles, Restrições Tecnológicas, Fluxo de Desenvolvimento, Governance.
+- Removed sections: None.
+- Templates requiring updates:
+    - ✅ .specify/templates/plan-template.md (aligned with "Constitution Check")
+    - ✅ .specify/templates/spec-template.md (aligned)
+    - ✅ .specify/templates/tasks-template.md (aligned)
+- Follow-up TODOs: None.
+-->
+
+# sonopalsta-virtual-kit Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Clean Code & Modularidade
+O código deve ser legível, modular e seguir os princípios SOLID. Funções e classes devem ter responsabilidade única. Comentários devem explicar o "porquê" e não o "o quê", em português brasileiro, garantindo que qualquer desenvolvedor consiga manter o sistema.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Documentação Proativa
+Toda nova funcionalidade ou alteração arquitetural deve ser refletida na pasta `docs`. A documentação é parte integrante do código e deve estar sempre sincronizada. Se a pasta `docs` não existir, ela deve ser criada imediatamente.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Testes como Requisito (NON-NEGOTIABLE)
+O desenvolvimento deve ser orientado a testes (TDD). Nenhum código de produção deve ser aceito sem testes unitários e de integração que validem o comportamento esperado e evitem regressões em funcionalidades críticas de áudio e eventos.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Performance e Baixa Latência
+Como um kit de sonoplastia virtual, o sistema deve garantir processamento eficiente. Algoritmos e integrações devem ser otimizados para minimizar a latência, garantindo que a resposta sonora seja imediata ao gatilho do usuário.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Versionamento Semântico e Evolução Segura
+Mudanças na API ou no comportamento do kit devem seguir rigorosamente o versionamento semântico (SemVer). Mudanças que quebram a compatibilidade (Breaking Changes) devem ser justificadas e acompanhadas de um plano de migração claro.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## Restrições Tecnológicas
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+O projeto utiliza o ecossistema Node.js com TypeScript para garantir segurança de tipos. A introdução de novas bibliotecas externas exige a consulta prévia à documentação oficial e a validação de que a biblioteca é mantida e performática.
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+## Fluxo de Desenvolvimento
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+O ciclo de vida de cada funcionalidade deve seguir o fluxo: Pesquisa -> Estratégia -> Execução (Plano, Ação, Validação). O uso de Conventional Commits é obrigatório para manter um histórico de mudanças legível e automatizável.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+Esta constituição é a autoridade máxima sobre as práticas de desenvolvimento do projeto. Qualquer divergência entre o código e estes princípios deve ser tratada como um bug crítico. Alterações nesta constituição exigem um incremento de versão e a atualização do Relatório de Impacto de Sincronização.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2026-03-12 | **Last Amended**: 2026-03-12

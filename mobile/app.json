@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "Church Sound Assistant",
+    "slug": "church-sound-assistant",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.sonopalsta.virtualkit"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "react-native-tcp-socket",
+      "react-native-camera-kit"
+    ]
+  }
+}

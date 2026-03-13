@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+.env
+*.log
+
+# Node.js
+node_modules/
+dist/
+build/
+.expo/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Expo
+.expo/
+dist/
+web-build/
+
+# EAS
+eas-build-pre-install.sh
+eas-build-post-install.sh
+*.jks
+*.keystore
+*.p12
+*.json
+!app.json
+!eas.json
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

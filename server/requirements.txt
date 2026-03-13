@@ -1,0 +1,5 @@
+pyautogui
+yt-dlp
+qrcode
+pillow
+win10toast

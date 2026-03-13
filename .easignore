@@ -1,0 +1,7 @@
+server/
+docs/
+specs/
+.gemini/
+.specify/
+README.md
+GEMINI.md
