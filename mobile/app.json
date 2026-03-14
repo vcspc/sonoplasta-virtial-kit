@@ -16,10 +16,6 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    },
-    "plugins": [
-      "react-native-tcp-socket",
-      "react-native-camera-kit"
-    ]
+    }
   }
 }
